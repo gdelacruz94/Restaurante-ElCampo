@@ -26,14 +26,14 @@
           <Group type="102" attributes="0">
               <Component id="kGradientPanel1" max="32767" attributes="0"/>
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-              <Component id="rSPanelsSlider1" min="-2" pref="577" max="-2" attributes="0"/>
+              <Component id="pnlSlider" min="-2" pref="577" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="kGradientPanel1" alignment="0" max="32767" attributes="0"/>
-          <Component id="rSPanelsSlider1" alignment="0" max="32767" attributes="0"/>
+          <Component id="pnlSlider" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -58,7 +58,7 @@
               </Group>
               <Component id="btnHome" min="-2" pref="262" max="-2" attributes="0"/>
               <Component id="btnMesa" min="-2" pref="262" max="-2" attributes="0"/>
-              <Component id="btnFacturacion" min="-2" pref="262" max="-2" attributes="0"/>
+              <Component id="btnCaja" min="-2" pref="262" max="-2" attributes="0"/>
               <Component id="btnCarta" min="-2" pref="262" max="-2" attributes="0"/>
               <Component id="jSeparator1" min="-2" pref="260" max="-2" attributes="0"/>
               <Component id="btnSalir" min="-2" pref="262" max="-2" attributes="0"/>
@@ -74,7 +74,7 @@
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                   <Component id="btnMesa" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Component id="btnFacturacion" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCaja" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                   <Component id="btnCarta" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
@@ -109,7 +109,7 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="5" green="74" red="f2" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Mesa"/>
+            <Property name="text" type="java.lang.String" value="Mesas"/>
             <Property name="icons" type="rojeru_san.efectos.ValoresEnum$ICONS" editor="org.netbeans.modules.form.editors.EnumEditor">
               <Value id="VIEW_MODULE"/>
             </Property>
@@ -118,7 +118,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMesaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="rsmaterialcomponents.RSButtonMaterialIconUno" name="btnFacturacion">
+        <Component class="rsmaterialcomponents.RSButtonMaterialIconUno" name="btnCaja">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="5" green="74" red="f2" type="rgb"/>
@@ -161,14 +161,27 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="rojeru_san.RSPanelsSlider" name="rSPanelsSlider1">
+    <Container class="rojeru_san.RSPanelsSlider" name="pnlSlider">
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
       <SubComponents>
-        <Component class="restaurantelcampo.priMesas" name="priMesas1">
+        <Component class="restaurantelcampo.priMesas" name="pnlMesa1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="pnlMesa1" noResource="true"/>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
               <CardConstraints cardName="card2"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="restaurantelcampo.priCarta" name="pnlCarta1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="pnlcarta1" noResource="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="card3"/>
             </Constraint>
           </Constraints>
         </Component>

@@ -19,7 +19,7 @@ public class DetalleMesa extends javax.swing.JFrame {
     public DetalleMesa() {
         initComponents();
         this.setLocationRelativeTo(null);
-        Mesas NumeroMesa = new Mesas();
+        priMesas NumeroMesa = new priMesas();
         txtNumMesa.setText(NumeroMesa.NumMesa);
     }
 
@@ -130,6 +130,11 @@ public class DetalleMesa extends javax.swing.JFrame {
 
         rSButtonMaterialIconUno3.setText("Atrás");
         rSButtonMaterialIconUno3.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.BACKSPACE);
+        rSButtonMaterialIconUno3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonMaterialIconUno3ActionPerformed(evt);
+            }
+        });
 
         rSButtonMaterialIconUno4.setText("Salir");
         rSButtonMaterialIconUno4.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.POWER_SETTINGS_NEW);
@@ -208,11 +213,15 @@ public class DetalleMesa extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void rSButtonMaterialIconUno3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonMaterialIconUno3ActionPerformed
+        dispose();
+    }//GEN-LAST:event_rSButtonMaterialIconUno3ActionPerformed
 
     /**
      * @param args the command line arguments
