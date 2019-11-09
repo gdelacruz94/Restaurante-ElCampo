@@ -8,23 +8,20 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author LAB-USR-PT116-C409
  */
-public class DetalleEntradas extends javax.swing.JFrame {
+public class DetallePostres extends javax.swing.JFrame {
 
     private void PropiedadTabla(){
-        jtableEntradas.setDefaultRenderer(Object.class, new ImgTabla());
+        jtablePostres.setDefaultRenderer(Object.class, new ImgTabla());
         String titulos[] = {"Nombre","Precio","Imagen"};
         DefaultTableModel tm = new DefaultTableModel(null, titulos);
-        tm.addRow(new Object[]{"Huevo a la rusa", "8.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/huevo a la rusa.jpg")))});
-        tm.addRow(new Object[]{"Yuquitas rellenas", "9.50", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/yuquitas rellenas.jpg")))});
-        tm.addRow(new Object[]{"Ocopa arequipeña", "7.50", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/ocopa arequipeña.jpg")))});
-        tm.addRow(new Object[]{"Papa a la huancaina", "7.50", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/papa a la huancaina.jpg")))});
-        tm.addRow(new Object[]{"Papa rellena", "8.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/papa rellena.jpg")))});
-        tm.addRow(new Object[]{"Tamales", "9.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/tamales.jpg")))});
-        jtableEntradas.setRowHeight(80);
-        jtableEntradas.setModel(tm);
+        tm.addRow(new Object[]{"Arroz con leche", "8.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/arroz con leche.jpg")))});
+        tm.addRow(new Object[]{"Mazamorra morada", "8.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/mazamorra.jpg")))});
+        tm.addRow(new Object[]{"Picarones", "8.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/picarones.jpg")))});
+        jtablePostres.setRowHeight(85);
+        jtablePostres.setModel(tm);
     }
     
-    public DetalleEntradas() {
+    public DetallePostres() {
         initComponents();
         PropiedadTabla();
 
@@ -49,7 +46,7 @@ public class DetalleEntradas extends javax.swing.JFrame {
         btnSalir = new rsmaterialcomponents.RSButtonMaterialIconUno();
         btnEditarEntrada = new rsmaterialcomponents.RSButtonMaterialIconUno();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jtableEntradas = new javax.swing.JTable();
+        jtablePostres = new javax.swing.JTable();
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -59,7 +56,7 @@ public class DetalleEntradas extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Entradas");
+        jLabel2.setText("Comidas");
 
         javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
         kGradientPanel1.setLayout(kGradientPanel1Layout);
@@ -102,7 +99,7 @@ public class DetalleEntradas extends javax.swing.JFrame {
             }
         });
 
-        jtableEntradas.setModel(new javax.swing.table.DefaultTableModel(
+        jtablePostres.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"", "", null},
                 {"", "", null},
@@ -115,7 +112,7 @@ public class DetalleEntradas extends javax.swing.JFrame {
                 "Nombre", "Precio", "Imagen"
             }
         ));
-        jScrollPane1.setViewportView(jtableEntradas);
+        jScrollPane1.setViewportView(jtablePostres);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -211,7 +208,7 @@ public class DetalleEntradas extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new DetalleEntradas().setVisible(true);
+                new DetallePostres().setVisible(true);
             }
         });
     }
@@ -225,7 +222,7 @@ public class DetalleEntradas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jtableEntradas;
+    private javax.swing.JTable jtablePostres;
     private keeptoo.KGradientPanel kGradientPanel1;
     // End of variables declaration//GEN-END:variables
 }

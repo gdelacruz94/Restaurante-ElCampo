@@ -5,7 +5,7 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 
-public class ImgTablaEntradas extends DefaultTableCellRenderer{
+public class ImgTabla extends DefaultTableCellRenderer{
 
     @Override
     public Component getTableCellRendererComponent(JTable jtable, Object o, boolean bln, boolean bln1, int i, int i1) {
