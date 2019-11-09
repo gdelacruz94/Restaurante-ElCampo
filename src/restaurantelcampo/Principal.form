@@ -3,6 +3,7 @@
 <Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -56,7 +57,7 @@
                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <Component id="btnHome" min="-2" pref="262" max="-2" attributes="0"/>
+              <Component id="btnCocina" min="-2" pref="262" max="-2" attributes="0"/>
               <Component id="btnMesa" min="-2" pref="262" max="-2" attributes="0"/>
               <Component id="btnCaja" min="-2" pref="262" max="-2" attributes="0"/>
               <Component id="btnCarta" min="-2" pref="262" max="-2" attributes="0"/>
@@ -70,7 +71,7 @@
                   <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="btnHome" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCocina" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                   <Component id="btnMesa" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
@@ -93,16 +94,19 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="rsmaterialcomponents.RSButtonMaterialIconUno" name="btnHome">
+        <Component class="rsmaterialcomponents.RSButtonMaterialIconUno" name="btnCocina">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="5" green="74" red="f2" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="HOME"/>
+            <Property name="text" type="java.lang.String" value="COCINA"/>
             <Property name="icons" type="rojeru_san.efectos.ValoresEnum$ICONS" editor="org.netbeans.modules.form.editors.EnumEditor">
-              <Value id="HOME"/>
+              <Value id="KITCHEN"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCocinaActionPerformed"/>
+          </Events>
         </Component>
         <Component class="rsmaterialcomponents.RSButtonMaterialIconUno" name="btnMesa">
           <Properties>
@@ -128,6 +132,9 @@
               <Value id="PAYMENT"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCajaActionPerformed"/>
+          </Events>
         </Component>
         <Component class="rsmaterialcomponents.RSButtonMaterialIconUno" name="btnSalir">
           <Properties>
@@ -165,23 +172,31 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
       <SubComponents>
-        <Component class="restaurantelcampo.priMesas" name="pnlMesa1">
-          <Properties>
-            <Property name="name" type="java.lang.String" value="pnlMesa1" noResource="true"/>
-          </Properties>
+        <Component class="restaurantelcampo.priCocina" name="priCocina1">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
               <CardConstraints cardName="card2"/>
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="restaurantelcampo.priCarta" name="pnlCarta1">
-          <Properties>
-            <Property name="name" type="java.lang.String" value="pnlcarta1" noResource="true"/>
-          </Properties>
+        <Component class="restaurantelcampo.priMesas" name="priMesas1">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
               <CardConstraints cardName="card3"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="restaurantelcampo.priCaja" name="priCaja1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="card4"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="restaurantelcampo.priCarta" name="priCarta1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="card5"/>
             </Constraint>
           </Constraints>
         </Component>

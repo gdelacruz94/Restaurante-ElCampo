@@ -54,12 +54,27 @@ public class priCarta extends javax.swing.JPanel {
 
         btnComidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/platos.png"))); // NOI18N
         btnComidas.setText("Comidas");
+        btnComidas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComidasActionPerformed(evt);
+            }
+        });
 
         btnBebidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/bebidas.png"))); // NOI18N
         btnBebidas.setText("Bebidas");
+        btnBebidas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBebidasActionPerformed(evt);
+            }
+        });
 
         btnPostres.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/postres.png"))); // NOI18N
         btnPostres.setText("Postres");
+        btnPostres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPostresActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -97,6 +112,21 @@ public class priCarta extends javax.swing.JPanel {
         DetalleEntradas Entradas = new DetalleEntradas();
         Entradas.setVisible(true);
     }//GEN-LAST:event_btnEntradasActionPerformed
+
+    private void btnComidasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComidasActionPerformed
+        DetalleComidas Comidas = new DetalleComidas();
+        Comidas.setVisible(true);
+    }//GEN-LAST:event_btnComidasActionPerformed
+
+    private void btnBebidasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBebidasActionPerformed
+        DetalleBebidas Bebidas = new DetalleBebidas();
+        Bebidas.setVisible(true);
+    }//GEN-LAST:event_btnBebidasActionPerformed
+
+    private void btnPostresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPostresActionPerformed
+        DetallePostres Postres = new DetallePostres();
+        Postres.setVisible(true);
+    }//GEN-LAST:event_btnPostresActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -1,12 +1,12 @@
-
 package Entidades;
 
 
-public class boleta {
+public class boleta extends comprobante{
     private int dniCliente;
     private String nombreCliente;
 
-    public boleta(int dniCliente, String nombreCliente) {
+    public boleta(int dniCliente, String nombreCliente, int idComprobanmte, String tipoComprobante) {
+        super(idComprobanmte, tipoComprobante);
         this.dniCliente = dniCliente;
         this.nombreCliente = nombreCliente;
     }

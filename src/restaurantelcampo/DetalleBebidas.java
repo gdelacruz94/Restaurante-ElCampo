@@ -22,7 +22,7 @@ public class DetalleBebidas extends javax.swing.JFrame {
         tm.addRow(new Object[]{"Fanta Sin Azúcar", "2.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/fanta sin azucar.jpg")))});
         tm.addRow(new Object[]{"Fanta Kola Inglesa", "2.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/fanta kola inglesa.jpg")))});
         tm.addRow(new Object[]{"Sprite", "2.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/sprite.jpg")))});
-        jtableBebidas.setRowHeight(85);
+        jtableBebidas.setRowHeight(80);
         jtableBebidas.setModel(tm);
     }
     

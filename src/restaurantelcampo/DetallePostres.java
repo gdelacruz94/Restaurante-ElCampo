@@ -15,7 +15,7 @@ public class DetallePostres extends javax.swing.JFrame {
         String titulos[] = {"Nombre","Precio","Imagen"};
         DefaultTableModel tm = new DefaultTableModel(null, titulos);
         tm.addRow(new Object[]{"Arroz con leche", "8.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/arroz con leche.jpg")))});
-        tm.addRow(new Object[]{"Mazamorra morada", "8.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/mazamorra.jpg")))});
+        tm.addRow(new Object[]{"Mazamorra morada", "8.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/mazamorra morada.jpg")))});
         tm.addRow(new Object[]{"Picarones", "8.00", new JLabel(new ImageIcon(getClass().getResource("/Imagenes/picarones.jpg")))});
         jtablePostres.setRowHeight(85);
         jtablePostres.setModel(tm);
@@ -56,7 +56,7 @@ public class DetallePostres extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Comidas");
+        jLabel2.setText("Postres");
 
         javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
         kGradientPanel1.setLayout(kGradientPanel1Layout);
